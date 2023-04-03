@@ -1,0 +1,316 @@
+
+<app-carousel></app-carousel>
+<div id="overviews" class="section wb">
+    <div class="container">
+        <div class="section-title row text-center">
+            <div class="col-md-12">
+                <h3>OUR POPULAR COURSES</h3>
+                <hr class="invis"> 
+
+                <div class="row"> 
+                    <div class="col-lg-4 col-md-6 col-12" *ngFor="let item of  course">
+                        <div class="course-item" (click)="changePath(item)">
+                            <div class="image-blog">
+                                <img src="{{item.img}}" alt="" class="img-fluid">
+                            </div>
+                            <div class="course-br">
+                                <div class="course-title">
+                                    <h2><a  title="">{{item.courseName}}</a></h2>
+                                </div>
+                                <!-- <div class="" style="color:#304e55">
+                                    <p><b>{{item.courseSub}}</b> </p>
+                                </div> -->
+                                <!-- <div class="course-desc">
+                                    <p>{{item.footerTitle}} </p>
+                                </div> -->
+                                <div class="course-rating">
+                                    4.5
+                                    <i class="fa fa-star"></i>	
+                                    <i class="fa fa-star"></i>	
+                                    <i class="fa fa-star"></i>	
+                                    <i class="fa fa-star"></i>	
+                                    <i class="fa fa-star-half"></i>								
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div><!-- end col -->
+        
+                
+                </div>	
+                <hr class="hr3">
+      
+        
+      
+            </div>
+        </div><!-- end title -->
+    
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="message-box">
+                    <h4>2023 BEST CA/CS/CMA Coaching Classes</h4>
+                    <h2>Welcome to Prominent Academy (Sumit Arora Classes)</h2>
+                    <p>Chartered Accountants are highly demanded professionals in industry & are handsomely paid. Many students strive for getting proper guidance and coaching. Prominent Academy is dealing in CA, CS and CMA Courses with professional expertise team and with these courses we also develop child overall personality. </p>
+
+                   
+
+                    <a routerLink="/about" class="hover-btn-new orange"><span>Learn More</span></a>
+                </div><!-- end messagebox -->
+            </div><!-- end col -->
+            
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="post-media wow fadeIn">
+                    <img src="../../assets/images/home_banner1.jpg" alt="" class="img-fluid img-rounded">
+                </div><!-- end media -->
+            </div><!-- end col -->
+        </div>
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="post-media wow fadeIn">
+                    <img src="../../assets/images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                </div><!-- end media -->
+            </div><!-- end col -->
+            
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                <div class="message-box">
+                    
+                    <p>Students achieve excellent and progressive academic results year on year. The dedication of our faculty and the keen interest exhibited by our students has produced a commendable academic record with ranks every year in various batches. </p>
+
+                    <p> We believe that discipline is the bridge between goals and accomplishment, in that way we are consistently able to achieve victory every year. We are proud of the continuous dedication and hardwork of faculties and students witness every academic period.</p>
+
+                    <a routerLink="/about" class="hover-btn-new orange"><span>Learn More</span></a>
+                </div><!-- end messagebox -->
+            </div><!-- end col -->
+            
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+<section class="section lb page-section">
+    <div class="container">
+         <div class="section-title row text-center">
+            <div class="col-md-8 offset-md-2">
+                <h3>Prominent Academy (Sumit Arora Classes)</h3>
+                <!-- <p class="lead">Lorem Ipsum dolroin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem!</p> -->
+            </div>
+        </div><!-- end title -->
+        <div class="container">
+            <div class="main-timeline">
+            
+                                    <!-- start experience section-->
+                                    <div class="timeline">
+                                        <div class="icon"></div>
+                                        <div class="date-content">
+                                            <!-- <div class="date-outer">
+                                                <span class="date">
+                                                        <span class="month">2 Years</span>
+                                                <span class="year">2013</span>
+                                                </span>
+                                            </div> -->
+                                        </div>
+                                        <div class="timeline-content">
+                                          
+                                                <div class="timeline__content img-bg-01">
+                                                    <h2>Professional Courses</h2>
+                                                    <p>In Commerce, there are few professional course in which student can enroll, CA CS and CMA Course is one of them. Prominent Academy (Sumit Arora Classes) is the one who is dealing in CA, CS and CMA Courses with professional and well experienced team.</p>
+                                                </div>
+                                       
+                                        </div>
+                                    </div>
+                                    <!-- end experience section-->
+            
+                                    <!-- start experience section-->
+                                    <div class="timeline">
+                                        <div class="icon"></div>
+                                        <div class="date-content">
+                                            <!-- <div class="date-outer">
+                                                <span class="date">
+                                                        <span class="month">1 Years</span>
+                                                <span class="year">2015</span>
+                                                </span>
+                                            </div> -->
+                                        </div>
+                                        <div class="timeline-content">
+                                          
+                                                <div class="timeline__content img-bg-01">
+                                                    <h2>Notes & Study Space</h2>
+                                                    <p>Prominent Academy (Sumit Arora Classes) always provides updated and amended study material to students for study, which is hand made by group of professionals. We also provide space for self study to students to study even after class without any hustle and limitation.</p>
+                                                </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!-- end experience section-->
+            
+                                    <!-- start experience section-->
+                                    <div class="timeline">
+                                        <div class="icon"></div>
+                                        <div class="date-content">
+                                            <!-- <div class="date-outer">
+                                                <span class="date">
+                                                        <span class="month">2 Years</span>
+                                                <span class="year">2016</span>
+                                                </span>
+                                            </div> -->
+                                        </div>
+                                        <div class="timeline-content">
+                                            
+                                                <div class="timeline__content img-bg-01">
+                                                    <h2>Qualified Teachers</h2>
+                                                    <p>All the faculties of Prominent Academy (Sumit Arora Classes) are professionaly and highly qualified. Most of our faculties are qualified as chartered accountant or company secretary or cost accountant and having experience of more than 10 years in professional teaching.</p>
+                                                </div>
+                                           
+                                        </div>
+                                    </div>
+                                    <!-- end experience section-->
+            
+                                    <!-- start experience section-->
+                                    <div class="timeline">
+                                        <div class="icon"></div>
+                                        <div class="date-content">
+                                            <!-- <div class="date-outer">
+                                                <span class="date">
+                                                        <span class="month">2 Years</span>
+                                                <span class="year">2018</span>
+                                                </span>
+                                            </div> -->
+                                        </div>
+                                        <div class="timeline-content">
+                                            <div class="timeline__content img-bg-01">
+                                                <h2>Certification</h2>
+                                                <p>Prominent Academy (Sumit Arora Classes) also provides certification to students on clearing their exams and even on achieving any All India Rank (AIR). We are always there to help students for their bright future and career in this professional world.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end experience section-->
+            
+                                </div>
+            </div>
+    </div>
+</section>
+
+
+<section class="video">
+   
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/3lscs-buSzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+</section>
+
+<div class="section cl">
+    <div class="container">
+        <div class="row text-left stat-wrap">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-study"></i></span>
+                <p class="stat_count">1000</p>
+                <h3>Students</h3>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-online"></i></span>
+                <p class="stat_count">9</p>
+                <h3>Courses</h3>
+            </div><!-- end col -->
+
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <span data-scroll class="global-radius icon_wrap effect-1 alignleft"><i class="flaticon-years"></i></span>
+                <p class="stat_count">12</p>
+                <h3>Years Completed</h3>
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->
+
+
+<!-- 
+<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('../../assets/images/parallax_04.jpg');">
+    <div class="container">
+        <div class="section-title text-center">
+            <h3>Testimonials</h3>
+            <p>Lorem ipsum dolor sit aet, consectetur adipisicing lit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="testi-carousel owl-carousel owl-theme">
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_01.png" alt="" class="img-fluid">
+                            <h4>James Fernando </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                            <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                        </div>
+                       
+                    </div>
+                 
+
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_02.png" alt="" class="img-fluid">
+                            <h4>Jacques Philips </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                            <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                        </div>
+                       
+                    </div>
+                  
+
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_03.png" alt="" class="img-fluid ">
+                            <h4>Venanda Mercy </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                        </div>
+                        
+                    </div>
+                  
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_01.png" alt="" class="img-fluid">
+                            <h4>James Fernando </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
+                            <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
+                        </div>
+                       
+                    </div>
+                   
+
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_02.png" alt="" class="img-fluid">
+                            <h4>Jacques Philips </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
+                            <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
+                        </div>
+                        
+                    </div>
+                   
+
+                    <div class="testimonial clearfix">
+                        <div class="testi-meta">
+                            <img src="../../assets/images/testi_03.png" alt="" class="img-fluid">
+                            <h4>Venanda Mercy </h4>
+                        </div>
+                        <div class="desc">
+                            <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
+                            <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- end section -->
+

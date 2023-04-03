@@ -1,0 +1,118 @@
+<div class="all-title-box">
+    <div class="container text-center">
+        <h1 *ngIf="url === '/ca'">CA Course</h1>
+        <h1 *ngIf="url === '/cs'">CS Course</h1>
+        <h1 *ngIf="url === '/cma'">CMA Course</h1>
+    </div>
+</div>
+
+<div id="overviews" class="section wb">
+    <div class="container">
+     
+
+        <hr class="invis"> 
+
+        <div class="row" *ngIf="url === '/ca'"> 
+    
+            <div class="col-lg-4 col-md-6 col-12"   *ngFor="let item of  course1">
+        
+                <div class="course-item" (click)="changePath(item)">
+                    <div class="image-blog">
+                        <img src="{{item.img}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="course-br">
+                        <div class="course-title">
+                            <h2><a title="">{{item.courseName}}</a></h2>
+                        </div>
+                        <!-- <div class="" style="color:#304e55">
+                            <p><b>{{item.courseSub}}</b> </p>
+                        </div> -->
+                        <!-- <div class="course-desc">
+                            <p>{{item.footerTitle}} </p>
+                        </div> -->
+                        <div class="course-rating">
+                            4.5
+                            <i class="fa fa-star"></i>	
+                            <i class="fa fa-star"></i>	
+                            <i class="fa fa-star"></i>	
+                            <i class="fa fa-star"></i>	
+                            <i class="fa fa-star-half"></i>								
+                        </div>
+                    </div>
+                
+                </div>
+            </div><!-- end col -->
+        </div>
+            
+        <div class="row" *ngIf="url === '/cs'">
+       
+                <div class="col-lg-4 col-md-6 col-12" *ngFor="let item of  course2">
+                    <div class="course-item" (click)="changePath(item)">
+                        <div class="image-blog">
+                            <img src="{{item.img}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2><a  title="">{{item.courseName}}</a></h2>
+                            </div>
+                            <!-- <div class="" style="color:#304e55">
+                                <p><b>{{item.courseSub}}</b> </p>
+                            </div> -->
+                            <!-- <div class="course-desc">
+                                <p>{{item.footerTitle}} </p>
+                            </div> -->
+                            <div class="course-rating">
+                                4.5
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star-half"></i>								
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div><!-- end col -->
+          
+        </div>
+       
+        <div class="row"  *ngIf="url === '/cma'">
+     
+                <div class="col-lg-4 col-md-6 col-12" *ngFor="let item of  course3">
+                    <div class="course-item" (click)="changePath(item)">
+                        <div class="image-blog">
+                            <img src="{{item.img}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="course-br">
+                            <div class="course-title">
+                                <h2><a  title="">{{item.courseName}}</a></h2>
+                            </div>
+                            <!-- <div class="" style="color:#304e55">
+                                <p><b>{{item.courseSub}}</b> </p>
+                            </div> -->
+                            <!-- <div class="course-desc">
+                                <p>{{item.footerTitle}} </p>
+                            </div> -->
+                            <div class="course-rating">
+                                4.5
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star"></i>	
+                                <i class="fa fa-star-half"></i>								
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div><!-- end col -->
+         
+        </div>
+
+            
+        
+    		
+        
+        <hr class="hr3"> 
+       
+    </div><!-- end container -->
+</div><!-- end section -->

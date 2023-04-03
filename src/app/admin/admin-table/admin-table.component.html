@@ -1,0 +1,123 @@
+<div *ngIf="isBanner">
+    <h1>
+        Banner table
+    </h1>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">SoNo</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of bannerData;let i = index">
+        
+              <td>{{i+1}}</td>
+              <td><img [src]="item.fireBaseUrl" height="60px" width="60px"></td>
+              <td><i class="fa fa-trash" (click)="deleteBanner(item)" aria-hidden="true"></i></td>
+         
+           
+           
+          </tr>
+         
+         
+        </tbody>
+      </table>
+      
+    
+</div>
+
+<div *ngIf="isTeacher">
+    <h1>
+        Teacher Table
+    </h1>
+   
+      
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">So No</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Position</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of teacherData;let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td><img [src]="item.fireBaseUrl" height="30px" width="30px"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.position}}</td>
+            <td><i class="fa fa-edit" (click)="edit(item)"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-trash" (click)="delete(item)" aria-hidden="true"></i></td>
+          </tr>
+       
+        </tbody>
+      </table>
+</div>
+
+<div *ngIf="isResult">
+  <h1>
+      Result table
+  </h1>
+  <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">SoNo</th>
+          <th scope="col">Image</th>
+          <th scope="col">Action</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of resultData;let i = index">
+      
+            <td>{{i+1}}</td>
+            <td><img [src]="item.fireBaseUrl" height="60px" width="60px"></td>
+            <td><i class="fa fa-trash" (click)="deleteResult(item)" aria-hidden="true"></i></td>
+       
+         
+         
+        </tr>
+       
+       
+      </tbody>
+    </table>
+    
+  
+</div>
+
+<div *ngIf="isGallery">
+  <h1>
+      Gallery table
+  </h1>
+  <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">SoNo</th>
+          <th scope="col">Image</th>
+          <th scope="col">Action</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of galleryData;let i = index">
+      
+            <td>{{i+1}}</td>
+            <td><img [src]="item.fireBaseUrl" height="60px" width="60px"></td>
+            <td><i class="fa fa-trash" (click)="deleteGallery(item)" aria-hidden="true"></i></td>
+       
+         
+         
+        </tr>
+       
+       
+      </tbody>
+    </table>
+    
+  
+</div>

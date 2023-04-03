@@ -1,0 +1,106 @@
+<div class="row">
+  <div class="col-sm-3">
+    <button class="btn btn-primary" (click)="showTecher()">Teacher</button>
+  </div>
+  <div class="col-sm-3">
+    <button class="btn btn-primary" (click)="showBanner()">Banner</button>
+  </div>
+  <div class="col-sm-3">
+    <button class="btn btn-primary" (click)="showResult()">Result</button></div>
+
+<div class="col-sm-3">
+  <button class="btn btn-primary" (click)="showGallery()">Gallery</button>
+</div>
+
+</div>
+
+<section *ngIf="isBanner">
+  <div class="row" >
+    <div class="col-sm-8">
+        <h3>Banner Form</h3>
+    </div>
+    <div class="col-sm-4">
+<button class="btn btn-success" (click)="bannerRedire()">Banner</button>
+    </div>
+</div>
+<div>
+  <form>
+    <label for="fname">Add banner image</label>
+    <input type="file"  (change)=" onbannerFileChange($event)">
+    <button type="submit" class="btn btn-success" value="Submit" (click)="onSubmitBanner()">Save</button>
+  </form>
+</div>
+</section>
+
+
+<br>
+<section *ngIf="isTeacher">
+  <div class="row" >
+  <div class="col-sm-8">
+      <h3>Teacher Form</h3>
+  </div>
+  <div class="col-sm-4">
+<button class="btn btn-success" (click)="TeacherRedire()">Teacher List</button>
+  </div>
+</div>
+<form>
+  <label for="fname">Teacher's Name</label>
+  <input type="text" [(ngModel)]="TeacherFormModel.name" [ngModelOptions]="{standalone: true}"  placeholder="Your name..">
+
+  <label for="lname">Description</label>
+  <input type="text" [(ngModel)]="TeacherFormModel.description" [ngModelOptions]="{standalone: true}" placeholder="Your last name..">
+
+  <label for="lname">Position</label>
+  <input type="number" [(ngModel)]="TeacherFormModel.position" [ngModelOptions]="{standalone: true}" placeholder="Your last name..">
+
+  <label for="country">Uplaod Image</label>
+  <input type="file"  (change)="onTeacherFileChange($event)"  placeholder="Your last name.." >
+  <button type="submit" *ngIf="isUpdate" class="btn btn-success" value="Submit" (click)="onUpdateTecher()">Update</button>
+  <button type="submit" *ngIf="!isUpdate" class="btn btn-success" value="Submit" (click)="onSubmitTecher()">Save</button>
+</form>
+<div>
+
+</div>
+</section>
+
+<section *ngIf="isResult">
+  <div class="row" >
+    <div class="col-sm-8">
+        <h3>Result Form</h3>
+    </div>
+    <div class="col-sm-4">
+<button class="btn btn-success" (click)="ResultRedire()">Result</button>
+    </div>
+</div>
+<div>
+  <form>
+    <label for="fname">Add Result image</label>
+    <input type="file"  (change)=" onResultFileChange($event)">
+    <button type="submit" class="btn btn-success" value="Submit" (click)="onSubmitResult()">Save</button>
+  </form>
+</div>
+</section>
+
+<section *ngIf="isGallery">
+  <div class="row" >
+    <div class="col-sm-8">
+        <h3>Gallery Form</h3>
+    </div>
+    <div class="col-sm-4">
+<button class="btn btn-success" (click)="galleryRedire()">Gallery</button>
+    </div>
+</div>
+<div>
+  <form>
+    <label for="fname">Add Gallery image</label>
+    <input type="file"  (change)="onGalleryFileChange($event)">
+    <button type="submit" class="btn btn-success" value="Submit" (click)="onGalleryResult()">Save</button>
+  </form>
+</div>
+</section>
+
+<div class="d-flex justify-content-center" *ngIf="isLoader">
+  <div class="spinner-border text-success" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
